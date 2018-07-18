@@ -56,16 +56,24 @@ a:hover {
 
 .house-column.Gryffindor {
   background-color: #3D0504;
+  flex-basis: 23%;
+  flex-grow: 0;
 }
 
 .house-column.Hufflepuff {
   background-color: #A36C09;
+  flex-basis: 23%;
+  flex-grow: 0;
 }
 
 .house-column.Ravenclaw {
   background-color: #001B27;
+  flex-basis: 23%;
+  flex-grow: 0;
 }
 
 .house-column.Slytherin {
   background-color: #012606;
+  flex-basis: 23%;
+  flex-grow: 0;
 }
