@@ -1,0 +1,8 @@
+<p> Found student: </p>
+<p> First name: <%= @student.first_name %> </p>
+<p> Last name: <%= @student.last_name %> </p>
+<p> House ID: <%= @student.house.name %> </p>
+<p> Age: <%= @student.age %></p>
+<form class="" action="/students/<%= @student.id %>/delete" method="post">
+  <input type="submit" value="Delete record">
+</form>
