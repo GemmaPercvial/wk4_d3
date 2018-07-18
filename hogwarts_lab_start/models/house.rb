@@ -6,7 +6,7 @@ class House
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
-    @name = options['name']
+    @name = options['name'].capitalize
   end
 
   def save()
@@ -23,6 +23,13 @@ class House
     result = SqlRunner.run(sql, values)
     id = result.first["id"]
     @id = id.to_i
+  end
+
+  def students()
+    sql = "SELECT * from students WHERE students.house_id = $1"
+    values =[@id]
+    result = SqlRunner.run(sql, values)
+    students = result.map { |student| Student.new(student) }
   end
 
   def self.find(id)

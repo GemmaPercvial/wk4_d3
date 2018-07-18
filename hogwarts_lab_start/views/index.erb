@@ -1,5 +1,19 @@
-<p> All students: </p>
-<% for student in @students %>
-  <%= student.full_name %>
-  <p><a href="/students/<%= student.id %>">Show details</a></p>
-<% end %>
+<div class="house-columns">
+  <% for house in @houses %>
+  <div class="house-column <%= house.name %>">
+      <h1>
+        <%= house.name %>
+      </h1>
+      <div class="students">
+        <% for student in house.students %>
+        <a href="/students/<%= student.id %>"><%= student.full_name %></a>
+        <% end %>
+      </div>
+  </div>
+  <% end %>
+</div>
+<div class="enroll-button">
+  <form action="/students/new" method="get">
+    <input type="submit" value="Enroll new student">
+  </form>
+</div>

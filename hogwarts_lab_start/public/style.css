@@ -1,57 +1,71 @@
 body {
   padding: 30px;
-  font-family: 'Rye', cursive;
-  color: #ccad00;
-  background-image: url("/harry_potter.gif");
+  background-color: #000000;
+  font-family: 'PT Serif', serif;
+  font-size: 1rem;
+  color: #C0C0C0;
 }
 
 a {
   text-decoration: none;
-  color: red;
+  color: #C0C0C0;;
 }
 
 a:hover {
   color: darkred;
 }
 
-#menu {
-  width: 220px;
+.header {
+  padding-bottom: 5rem;
+}
+
+.header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.house-columns {
   display: flex;
-  margin: 0 auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.menu-item {
-  display: inline-block;
-  flex-grow: 1;
-}
-
-#logo {
+.house-columns h1 {
   text-align: center;
 }
 
-#student-wrapper {
-  margin-left: 300px;
-}
-.student {
-  border: 5px double;
-  margin: 0 35px 30px 0;
-  padding: 25px;
-  width: 200px;
-  display: inline-block;
-}
-
-.form-el {
-  margin: 10px 0;
+.house-columns .students {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
-.form-wrapper .form-el input[type="submit" i] {
-  margin-left: 180px;
+.enroll-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
-.form-wrapper .form-el label {
-  text-align: right;
-  display: inline-block;
-  vertical-align: middle;
-  width: 160px;
-  margin: 0 1em 0 0;
+.house-column.Gryffindor {
+  background-color: #3D0504;
+}
+
+.house-column.Hufflepuff {
+  background-color: #A36C09;
+}
+
+.house-column.Ravenclaw {
+  background-color: #001B27;
+}
+
+.house-column.Slytherin {
+  background-color: #012606;
 }
